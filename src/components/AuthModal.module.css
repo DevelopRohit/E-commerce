@@ -1,0 +1,60 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.mainBtn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.googleBtn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.divider {
+  text-align: center;
+  color: gray;
+}
+
+.toggle {
+  text-align: center;
+  cursor: pointer;
+  color: #4f46e5;
+}
+
+.closeBtn {
+  background: #ef4444;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}

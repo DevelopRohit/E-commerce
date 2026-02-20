@@ -1,0 +1,129 @@
+/* FULL PAGE WRAPPER */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* PAYMENT CARD */
+.paymentCard {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+/* SUMMARY */
+.summaryBox {
+  background: #f3f4f6;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* TOTAL */
+.paymentCard h3 {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.payBtn {
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.payBtn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+.payBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= POPUP MODAL STYLES ================= */
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 24, 39, 0.6); /* dark translucent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popupCard {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.popupCard h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.popupCard p {
+  margin: 0;
+  color: #374151;
+  font-size: 15px;
+}
+
+.popupBtn {
+  margin-top: 8px;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popupBtn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .paymentCard {
+    padding: 25px;
+  }
+  .popupCard {
+    padding: 24px 20px;
+  }
+}

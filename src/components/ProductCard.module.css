@@ -1,0 +1,104 @@
+.productCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.caption {
+  font-size: 13px;
+  color: #457b7b;
+  margin: 0;
+}
+
+.ratingBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #f59e0b;
+}
+
+.star {
+  color: #f59e0b;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin: 0;
+}
+
+.sizeBox {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.sizeBtn {
+  padding: 5px 10px;
+  border: 1px solid #4f46e5;
+  background: white;
+  color: #4f46e5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sizeBtn:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.activeSize {
+  background: #4f46e5;
+  color: white;
+}
+
+.addBtn {
+  margin-top: auto;
+  padding: 9px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #4338ca;
+}

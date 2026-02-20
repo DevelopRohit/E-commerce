@@ -1,0 +1,73 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4f46e5;
+}
+
+.loginBtn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.googleBtn {
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.googleBtn:hover {
+  background: #f3f4f6;
+}
+
+.divider {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.closeBtn {
+  background: #ef4444;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
