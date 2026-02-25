@@ -5,7 +5,8 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
-
+import LoginPage from "./components/LoginPage";
+import ProfilePage from "./components/ProfilePage";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
@@ -191,6 +192,7 @@ function App() {
             </>
           }
         />{" "}
+        <Route path="/profile" element={<ProfilePage />} />
         <Route
           path="/cart"
           element={
@@ -210,6 +212,7 @@ function App() {
         />
         <Route path="/orders" element={<OrderHistory />} />
         <Route path="/feedback" element={<FeedbackPage />} />
+        <Route path="/login" element={<LoginPage />} />X
       </Routes>
 
       <Footer />
