@@ -2,13 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({
-  onCategoryChange,
-  cartCount,
-  user,
-  logout,
-  openAuth,
-}) => {
+const Navbar = ({ onCategoryChange, cartCount, user, logout, openAuth }) => {
   const navigate = useNavigate();
 
   const handleCategory = (category) => {
@@ -21,10 +15,7 @@ const Navbar = ({
   return (
     <nav className={styles.navbar}>
       {/* LOGO */}
-      <div
-        className={styles.logo}
-        onClick={() => handleCategory("all")}
-      >
+      <div className={styles.logo} onClick={() => handleCategory("all")}>
         MyStore
       </div>
 
@@ -41,28 +32,15 @@ const Navbar = ({
       {/* RIGHT SECTION */}
       <div className={styles.right}>
         {/* CART */}
-        <button
-          className={styles.cartBtn}
-          onClick={() => navigate("/cart")}
-        >
+        <button className={styles.cartBtn} onClick={() => navigate("/cart")}>
           🛒 {cartCount || 0}
         </button>
 
         {/* AUTH */}
         {user ? (
-          <button
-            className={styles.logoutBtn}
-            onClick={logout}
-          >
-            Logout
-          </button>
+          <button onClick={() => navigate("/profile")}>Profile</button>
         ) : (
-          <button
-            className={styles.loginBtn}
-            onClick={openAuth}
-          >
-            Sign In
-          </button>
+          <button onClick={() => navigate("/login")}>Sign In</button>
         )}
       </div>
     </nav>
